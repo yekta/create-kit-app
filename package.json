@@ -1,0 +1,19 @@
+{
+  "name": "create-kit-app",
+  "version": "1.0.0",
+  "description": "A CLI app to create SvelteKit apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yekta/create-kit-app.git"
+  },
+  "author": "yekta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yekta/create-kit-app/issues"
+  },
+  "homepage": "https://github.com/yekta/create-kit-app#readme"
+}
