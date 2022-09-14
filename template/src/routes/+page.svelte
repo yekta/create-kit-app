@@ -1,4 +1,3 @@
-<script lang='ts'>
-	import Hello from "../lib/components/Hello.svelte";
-</script>
-<Hello/>
+<div class='w-full flex justify-center px-5 py-12'>
+  <h1 class='font-bold text-3xl'>Hello</h1>
+</div>

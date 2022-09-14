@@ -1,18 +1,19 @@
 {
-  "name": "create-kit-app",
-  "version": "1.0.1",
+  "name": "create-kit-app-test",
+  "version": "0.0.24",
   "description": "Create a SvelteKit app with Tailwind and Typescript",
   "type": "module",
   "bin": {
     "create-kit-app": "./dist/index.js"
   },
   "engines": {
-    "node": ">=16.4"
+    "node": ">=16.17.0"
   },
   "exports": "./dist/index.js",
   "scripts": {
     "typecheck": "tsc",
-    "dev": "tsup index.ts --format esm --watch --clean --onSuccess \"node dist/index.js\""
+    "build": "tsup index.ts --format esm --clean --sourcemap --minify --metafile",
+    "release": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/yekta/create-kit-app#readme",
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.7.18",
     "tsup": "^6.2.3",
     "typescript": "^4.8.3"
@@ -32,6 +34,7 @@
   "dependencies": {
     "chalk": "^5.0.1",
     "commander": "^9.4.0",
-    "fs-extra": "^10.1.0"
+    "fs-extra": "^10.1.0",
+    "ora": "^6.1.2"
   }
 }
