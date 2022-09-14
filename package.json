@@ -1,6 +1,6 @@
 {
   "name": "create-kit-app-test",
-  "version": "0.0.24",
+  "version": "0.0.26",
   "description": "Create a SvelteKit app with Tailwind and Typescript",
   "type": "module",
   "bin": {

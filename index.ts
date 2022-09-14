@@ -33,7 +33,7 @@ const main = async () => {
   const gitIgnoreOldDir = path.join(projectDir, "_gitignore");
   const gitIgnoreNewDir = path.join(projectDir, ".gitignore");
   fs.renameSync(gitIgnoreOldDir, gitIgnoreNewDir);
-  spinnerCreate.succeed(`Created at ${chalk.green.bold(projectDir)}!`);
+  spinnerCreate.succeed(`Created at ${chalk.green.bold(projectDir)}`);
 
   const spinnerDependencies = ora(`Installing dependencies...\n`).start();
   await execAsync(`npm install`, { cwd: projectDir });
@@ -43,7 +43,7 @@ const main = async () => {
   await execAsync(`git init`, { cwd: projectDir });
   spinnerGit.succeed(`Initialized git`);
 
-  console.log("Done!");
+  console.log(`${chalk.green.bold("Done!")}\n`);
   process.exit(0);
 };
 
