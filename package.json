@@ -1,7 +1,7 @@
 {
-  "name": "create-kit-app-test",
-  "version": "0.0.28",
-  "description": "Create a SvelteKit app with Tailwind and Typescript",
+  "name": "create-kit-app",
+  "version": "0.0.1",
+  "description": "Create a SvelteKit app with Tailwind and Typescript.",
   "type": "module",
   "bin": {
     "create-kit-app": "./dist/index.js"
