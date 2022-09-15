@@ -1,3 +1,3 @@
-# Create Kit App CLI
+# Create Kit App
 
-A very opinionated CLI for creating SvelteKit apps with Typescript and Tailwind.
+A very opinionated way to create SvelteKit apps with Typescript and Tailwind.
