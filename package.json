@@ -1,6 +1,6 @@
 {
   "name": "create-kit-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A very opinionated way to create SvelteKit apps with Typescript and Tailwind.",
   "type": "module",
   "bin": {
